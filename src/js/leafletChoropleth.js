@@ -89,7 +89,7 @@ function onEachFeature(feature, layer) {
   });
 }
 // specify the functions will execute on statesData
-geojson = L.geoJson(statesData, {
+geojson = L.geoJson(this, {
   style: style,
   onEachFeature: onEachFeature
 }).addTo(map);
