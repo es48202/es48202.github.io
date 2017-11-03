@@ -49,7 +49,7 @@ function style(feature) {
     color: 'white',
     dashArray: '3',
     fillOpacity: 0.7,
-    fillColor: getColor(feature.properties.density)
+    fillColor: getColor(feature.properties.ALAND10)
   };
 }
 // highlightFeature function
@@ -89,7 +89,7 @@ function onEachFeature(feature, layer) {
   });
 }
 // specify the functions will execute on statesData
-geojson = L.geoJson(this, {
+geojson = L.geoJson(counties, {
   style: style,
   onEachFeature: onEachFeature
 }).addTo(map);
