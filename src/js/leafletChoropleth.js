@@ -15,6 +15,13 @@ L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
 
 var marker = L.marker([38, -75]).addTo(map);
 
+var circle = L.circle([38.2, -75.9], {
+    color: 'red',
+    fillColor: '#f03',
+    fillOpacity: 0.5,
+    radius: 500
+}).addTo(map);
+
 ///////////////////////////////////////////////////////////////////////////////
 // control that shows state info on hover
 var info = L.control();
