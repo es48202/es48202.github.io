@@ -15,6 +15,8 @@ L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
 
 var marker = L.marker([38, -75]).addTo(map);
 
+var marker2 = L.marker([38.2, -75.9]).addTo(map);
+
 var circle = L.circle([38.2, -75.9], {
     color: 'red',
     fillColor: '#f03',
